@@ -13,3 +13,5 @@ openssl req -new -key mongodb.key -out mongodb.csr # answer Common Name (eg, YOU
 
 openssl x509 -req -in mongodb.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out mongodb.crt -days 500 -sha256
 cat mongodb.key mongodb.crt > mongodb.pem
+
+# run mongo using docker-compose or the following command: mongod --tlsMode requireTLS --tlsCertificateKeyFile tls/mongodb.pem  
