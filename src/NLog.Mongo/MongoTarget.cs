@@ -438,6 +438,8 @@ namespace NLog.Mongo
                     UseTls = true;                    
                 }
 
+                var client = new MongoClient(settings);
+
                 // Database name overrides connection string
                 var database = client.GetDatabase(databaseName);
 

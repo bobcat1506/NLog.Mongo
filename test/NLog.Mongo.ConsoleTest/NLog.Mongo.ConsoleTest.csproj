@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <VersionPrefix>4.4.0.0</VersionPrefix>
-    <TargetFramework>net452</TargetFramework>
-    <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>NLog.Mongo.ConsoleTest</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>NLog.Mongo.ConsoleTest</PackageId>
@@ -33,9 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="System.Configuration" />
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
 
 </Project>
